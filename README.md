@@ -27,8 +27,8 @@ If you would like to contribute to this project, please open a Pull Request or r
 
 ## License
 
-This project is licensed under [License Name] - see the LICENSE file for details.
+This project is licensed under [samar khaled] - see the LICENSE file for details.
 
 ## Contact
 
-For any inquiries, you can reach me at [your email address].
+For any inquiries, you can reach me at [samarkhaledabd100@gmail.com].
