@@ -1,0 +1,222 @@
+
+/******************************************reset css*******************************/
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/******************************************global css*******************************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+/******************************************container*******************************/
+.container {
+    display: flex;
+    margin:40px  auto;
+    background-color: #fff;
+	border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	/* overflow: hidden; */
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+/******************************************content*******************************/
+.info-box {
+
+    padding: 40px;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+h5{
+    margin-bottom: 13px;
+}
+.ready-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: hsl(211, 100%, 50%);
+    border: solid white 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.text-style{
+    font-size: 15px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	margin: 10px 0 10px;
+}
+/* ******************************************sign-form********************************************** */
+.signup-form {
+    padding: 65px;
+    display: flex;
+  
+    align-items: center;
+    width:800px;
+
+
+
+    position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+
+
+
+    right: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#signupBtn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+
+.signup-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #0056b3;
+}
+/******************************************social-media*********************************************/
+.social-media {
+    margin: 30px;
+    text-align: center;
+}
+
+
+.icons img{
+    width: 10%;
+
+}
+.icons span {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+a {
+    text-decoration: none; 
+  }
+.icons span:hover {
+    background-color: #ccc;
+    margin-top: 20px;
+}
+
+
+
+/* *******************************************Reusing animation for smooth show effect*************************** */
+
+.info-box {
+    padding: 40px;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out, background-color 0.3s, color 0.3s;
+}
+
+.signup-form {
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    width: 50%;
+    z-index: 2;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out, background-color 0.3s;
+}
+
+.info-box:hover {
+    transform: translateX(100%); 
+    background-color: #007bff; 
+    color: #fff; 
+}
+
+.info-box:hover + .signup-form {
+    transform: translateX(-100%);
+    background-color: #f1f1f1; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
